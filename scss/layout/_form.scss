@@ -1,0 +1,27 @@
+.form {
+    &__group {
+        margin-bottom: $spacing-unit * 1.5;
+
+        &-label {
+            display: block;
+            text-align: start;
+            margin-bottom: calc($spacing-unit / 2);
+            font-weight: bold;
+        }
+
+        &-input,
+        &-textarea {
+            width: 100%;
+            padding: $spacing-unit;
+            border: 1px solid #ccc;
+            border-radius: $border-radius;
+            box-sizing: border-box; 
+        }
+    }
+
+    &__button {
+        @extend .button;
+        @extend .button--highlight;
+        width: 100%;
+    }
+}

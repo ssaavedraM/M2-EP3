@@ -1,0 +1,45 @@
+.button {
+    display: inline-block;
+    padding: $spacing-unit $spacing-unit * 1.5;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+
+    &--primary {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &:hover {
+            background-color: darken($color-primary, 10%);
+        }
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-accent;
+        }
+    }
+
+    &--submit {
+        background-color: $color-accent;
+        color: $color-white;
+
+        &:hover {
+            background-color: darken($color-accent, 10%);
+        }
+    }
+
+    &--highlight {
+        background-color: $color-secondary;
+        color: $color-white;
+
+        &:hover {
+            background-color: $color-accent;
+        }
+    }
+}

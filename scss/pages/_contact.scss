@@ -1,0 +1,22 @@
+.contact-section {
+    text-align: center;
+
+    &__container {
+        @include flex-center;
+        flex-wrap: wrap;
+    }
+
+    &__form,
+    &__map {
+        width: 45%;
+        margin: $spacing-unit;
+    }
+    
+    @include respond-to(medium) {
+        &__form,
+        &__map {
+            width: 100%;
+        }
+    }
+
+}

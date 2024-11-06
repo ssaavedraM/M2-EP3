@@ -1,0 +1,39 @@
+.section {
+    padding: $spacing-unit * 4 0;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: $spacing-unit * 2;
+        text-align: center;
+        color: $color-primary;
+
+        @include respond-to(small) {
+            font-size: 2rem;
+        }
+    }
+
+    &__text {
+        font-size: 1em;
+        line-height: 1.6;
+        color: $color-text;
+        margin-bottom: $spacing-unit * 2;
+        text-align: center;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include respond-to(small) {
+            padding: 0 $spacing-unit;
+        }
+    }
+
+    &__content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 $spacing-unit;
+
+        @include respond-to(small) {
+            padding: 0 calc($spacing-unit / 2);
+        }
+    }
+}

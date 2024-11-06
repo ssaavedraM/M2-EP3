@@ -1,0 +1,9 @@
+.team {
+    padding: $spacing-unit * 4 $spacing-unit * 2;
+    text-align: center;
+
+    &__cards {
+        @include flex-center;
+        flex-wrap: wrap;
+    }
+}

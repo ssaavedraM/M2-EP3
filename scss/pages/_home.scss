@@ -1,0 +1,43 @@
+.welcome {
+    padding: $spacing-unit * 4 $spacing-unit * 2;
+    text-align: center;
+    background-color: $color-light;
+
+    &__title {
+        font-size: 2.5em;
+        margin-bottom: $spacing-unit * 2;
+        color: $color-primary;
+    }
+
+    &__text {
+        font-size: 1.2em;
+        color: $color-text;
+    }
+}
+
+.services {
+    margin: 5px 5px 5px 5px; 
+    &__cards {
+        @extend .cards-container;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        margin-left: $spacing-unit;
+    }
+
+
+}
+
+.testimonials {
+    margin: 20px 5px 5px 5px; 
+
+    &__cards {
+        @extend .cards-container;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        margin-left: $spacing-unit;
+    }
+}
